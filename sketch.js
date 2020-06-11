@@ -8,7 +8,7 @@ var ball_options, ball;
 var chain, options;
 
 function setup() {
-  var canvas = createCanvas(800,800);
+  var canvas = createCanvas(1000,400);
   engine = Engine.create();
   world = engine.world;
 
@@ -43,7 +43,16 @@ function draw() {
 
   ellipse(ball.position.x,ball.position.y,70)
 
-  line(ball.position.x,ball.position.y,ceiling.x,ceiling.y)
+  line(ball.position.x,ball.position.y,ceiling.position.x,ceiling.position.y)
   
+   if(keyCode===32){
+    ball.position.y = mouseY;
+    ball.position.x = mouseX;
+}
+
+  else if (keyCode === ENTER){
+    ball.position.x = 400;
+
+}
   
 }
