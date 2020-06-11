@@ -29,7 +29,7 @@ function setup() {
     bodyA:ball,
     bodyB:ceiling,
     length:100,
-    stiffness:0.04
+    stiffness:0.05
   }
   chain = Constraint.create(options);
   World.add(world,chain);
