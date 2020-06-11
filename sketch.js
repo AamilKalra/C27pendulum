@@ -37,12 +37,12 @@ function setup() {
 }
 
 function draw() {
-  background(255,255,255); 
+  background(25,55,25); 
   Engine.update(engine); 
   rect(ceiling.position.x,ceiling.position.y,200,15)
 
   ellipse(ball.position.x,ball.position.y,70)
-
+  strokeWeight(10);
   line(ball.position.x,ball.position.y,ceiling.position.x,ceiling.position.y)
   
    if(keyCode===32){
