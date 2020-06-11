@@ -43,9 +43,9 @@ function draw() {
 
   ellipse(ball.position.x,ball.position.y,70)
   strokeWeight(10);
-  line(ball.position.x,ball.position.y,ceiling.position.x,ceiling.position.y)
-  
-   if(keyCode===32){
+  line(ceiling.position.x,ceiling.position.y,ball.position.x,ball.position.y)
+
+  if(keyCode===32){
     ball.position.y = mouseY;
     ball.position.x = mouseX;
 }
@@ -54,5 +54,6 @@ function draw() {
     ball.position.x = 400;
 
 }
+
   
 }
