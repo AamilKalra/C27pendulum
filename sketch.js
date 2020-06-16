@@ -39,7 +39,7 @@ function setup() {
 function draw() {
   background(25,55,25); 
   Engine.update(engine); 
-  rectMode(CENTER)
+  rectMode(CENTER);
   rect(ceiling.position.x,ceiling.position.y,200,15)
 
   ellipse(ball.position.x,ball.position.y,70)
